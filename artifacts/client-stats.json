@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.35.0",
-  "hash": "6ae07201a1b619d12f52",
-  "time": 3520,
-  "builtAt": 1561764290353,
+  "hash": "8fc38db86c24fe1a560a",
+  "time": 2463,
+  "builtAt": 1561766429714,
   "publicPath": "/",
-  "outputPath": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io",
+  "outputPath": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist",
   "assetsByChunkName": {
-    "main": "main.6ae07201.js",
+    "main": "main.8fc38db8.js",
     "src/containers/Post": "templates/src/containers/Post.b4bbde88.js",
     "src/pages": "templates/src/pages.db3c91a3.js",
     "src/pages/404": "templates/src/pages/404.c3aa8124.js",
     "src/pages/about": "templates/src/pages/about.550636ba.js",
-    "src/pages/blog": "templates/src/pages/blog.836a2a01.js",
+    "src/pages/blog": "templates/src/pages/blog.288f4c87.js",
     "styles": [
-      "styles.5471f86d.css",
-      "templates/styles.5471f86d.js"
+      "styles.e1018be5.css",
+      "templates/styles.e1018be5.js"
     ],
     "vendors~main": "templates/vendors~main.0e2dfdab.js"
   },
   "assets": [
     {
-      "name": "main.6ae07201.js",
+      "name": "main.8fc38db8.js",
       "size": 6510,
       "chunks": [
         0
@@ -33,7 +33,7 @@
       "emitted": true
     },
     {
-      "name": "styles.5471f86d.css",
+      "name": "styles.e1018be5.css",
       "size": 361,
       "chunks": [
         6
@@ -88,7 +88,7 @@
       "emitted": true
     },
     {
-      "name": "templates/src/pages/blog.836a2a01.js",
+      "name": "templates/src/pages/blog.288f4c87.js",
       "size": 673,
       "chunks": [
         5
@@ -99,7 +99,7 @@
       "emitted": true
     },
     {
-      "name": "templates/styles.5471f86d.js",
+      "name": "templates/styles.e1018be5.js",
       "size": 82,
       "chunks": [
         6
@@ -130,10 +130,10 @@
         0
       ],
       "assets": [
-        "styles.5471f86d.css",
-        "templates/styles.5471f86d.js",
+        "styles.e1018be5.css",
+        "templates/styles.e1018be5.js",
         "templates/vendors~main.0e2dfdab.js",
-        "main.6ae07201.js"
+        "main.8fc38db8.js"
       ],
       "children": {},
       "childAssets": {}
@@ -147,10 +147,10 @@
         0
       ],
       "assets": [
-        "styles.5471f86d.css",
-        "templates/styles.5471f86d.js",
+        "styles.e1018be5.css",
+        "templates/styles.e1018be5.js",
         "templates/vendors~main.0e2dfdab.js",
-        "main.6ae07201.js"
+        "main.8fc38db8.js"
       ],
       "children": {},
       "childAssets": {}
@@ -180,7 +180,7 @@
         5
       ],
       "assets": [
-        "templates/src/pages/blog.836a2a01.js"
+        "templates/src/pages/blog.288f4c87.js"
       ],
       "children": {},
       "childAssets": {}
@@ -217,9 +217,9 @@
         "main"
       ],
       "files": [
-        "main.6ae07201.js"
+        "main.8fc38db8.js"
       ],
-      "hash": "5656d4332e83998f9655",
+      "hash": "86cacbd0567bd0c4a8b2",
       "siblings": [
         6,
         7
@@ -348,7 +348,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "components/Router",
-              "loc": "2:481-485"
+              "loc": "2:545-549"
             },
             {
               "moduleId": 53,
@@ -1339,9 +1339,9 @@
         "src/pages/blog"
       ],
       "files": [
-        "templates/src/pages/blog.836a2a01.js"
+        "templates/src/pages/blog.288f4c87.js"
       ],
-      "hash": "836a2a01ebf542a72d27",
+      "hash": "288f4c872cd9f3b52ba6",
       "siblings": [],
       "parents": [
         0,
@@ -1417,7 +1417,7 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: C:/Users/uptown/Documents/Projects/halfz-blog/artifacts/react-static-templates.js (referenced with import(), require.resolve)"
           ],
           "depth": 3,
-          "source": "import React from'react';import{useRouteData}from'react-static';//\nimport{Link}from'components/Router';export default function Blog(){var _useRouteData=useRouteData(),posts=_useRouteData.posts;return React.createElement(\"div\",null,React.createElement(\"h1\",null,\"It's blog time.\"),React.createElement(\"div\",null,React.createElement(\"a\",{href:\"#bottom\",id:\"top\"},\"Scroll to bottom!\")),React.createElement(\"br\",null),\"All Posts:\",React.createElement(\"ul\",null,posts.map(function(post){return React.createElement(\"li\",{key:post.id},React.createElement(Link,{to:\"/blog/post/\".concat(post.id,\"/\")},post.title));})),React.createElement(\"a\",{href:\"#top\",id:\"bottom\"},\"Scroll to top!\"));}"
+          "source": "//\nimport{Link}from'components/Router';import React from'react';import{useRouteData}from'react-static';export default function Blog(){var _useRouteData=useRouteData(),posts=_useRouteData.posts;return React.createElement(\"div\",null,React.createElement(\"h1\",null,\"It's blog time.\"),React.createElement(\"div\",null,React.createElement(\"a\",{href:\"#bottom\",id:\"top\"},\"Scroll to bottom!\")),React.createElement(\"br\",null),\"All Posts:\",React.createElement(\"ul\",null,posts.map(function(post){return React.createElement(\"li\",{key:post.id},React.createElement(Link,{to:\"/blog/post/\".concat(post.id,\"/\")},post.title));})),React.createElement(\"a\",{href:\"#top\",id:\"bottom\"},\"Scroll to top!\"));}"
         }
       ],
       "filteredModules": 0,
@@ -1444,10 +1444,10 @@
         "styles"
       ],
       "files": [
-        "styles.5471f86d.css",
-        "templates/styles.5471f86d.js"
+        "styles.e1018be5.css",
+        "templates/styles.e1018be5.js"
       ],
-      "hash": "5471f86d962e587acde2",
+      "hash": "e1018be57fe35d6ac157",
       "siblings": [
         0,
         7
@@ -1522,7 +1522,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1561764289034\n      var cssReload = require(\"C:/Users/uptown/Documents/Projects/halfz-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1561766428537\n      var cssReload = require(\"C:/Users/uptown/Documents/Projects/halfz-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
         },
         {
           "id": "",
@@ -2217,7 +2217,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "1:0-25"
+              "loc": "2:36-61"
             },
             {
               "moduleId": 51,
@@ -2226,7 +2226,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:133-138"
+              "loc": "2:197-202"
             },
             {
               "moduleId": 51,
@@ -2235,7 +2235,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:164-169"
+              "loc": "2:228-233"
             },
             {
               "moduleId": 51,
@@ -2244,7 +2244,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:213-218"
+              "loc": "2:277-282"
             },
             {
               "moduleId": 51,
@@ -2253,7 +2253,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:244-249"
+              "loc": "2:308-313"
             },
             {
               "moduleId": 51,
@@ -2262,7 +2262,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:316-321"
+              "loc": "2:380-385"
             },
             {
               "moduleId": 51,
@@ -2271,7 +2271,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:360-365"
+              "loc": "2:424-429"
             },
             {
               "moduleId": 51,
@@ -2280,7 +2280,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:422-427"
+              "loc": "2:486-491"
             },
             {
               "moduleId": 51,
@@ -2289,7 +2289,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:461-466"
+              "loc": "2:525-530"
             },
             {
               "moduleId": 51,
@@ -2298,7 +2298,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "2:542-547"
+              "loc": "2:606-611"
             },
             {
               "moduleId": 52,
@@ -3023,9 +3023,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -3597,9 +3597,9 @@
           "chunks": [
             7
           ],
-          "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "issuerId": 55,
-          "issuerName": "../lib/bootstrapPlugins.js",
+          "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "issuerId": 116,
+          "issuerName": "../lib/bootstrapTemplates.js",
           "issuerPath": [
             {
               "id": 54,
@@ -3607,9 +3607,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             }
           ],
           "failed": false,
@@ -3722,9 +3722,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -3937,9 +3937,9 @@
           "chunks": [
             7
           ],
-          "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "issuerId": 55,
-          "issuerName": "../lib/bootstrapPlugins.js",
+          "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "issuerId": 116,
+          "issuerName": "../lib/bootstrapTemplates.js",
           "issuerPath": [
             {
               "id": 54,
@@ -3947,9 +3947,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             }
           ],
           "failed": false,
@@ -4133,9 +4133,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -4401,7 +4401,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react-static",
-              "loc": "1:25-64"
+              "loc": "2:61-100"
             },
             {
               "moduleId": 51,
@@ -4410,7 +4410,7 @@
               "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
               "type": "harmony import specifier",
               "userRequest": "react-static",
-              "loc": "2:85-97"
+              "loc": "2:149-161"
             },
             {
               "moduleId": 53,
@@ -4463,9 +4463,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -5446,9 +5446,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6015,9 +6015,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6081,9 +6081,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6152,9 +6152,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6218,9 +6218,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6284,9 +6284,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6431,9 +6431,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6512,9 +6512,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6598,9 +6598,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6674,9 +6674,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -6750,9 +6750,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8575,9 +8575,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8637,9 +8637,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8699,9 +8699,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8761,9 +8761,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8818,9 +8818,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8880,9 +8880,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -8942,9 +8942,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9004,9 +9004,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9066,9 +9066,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9138,9 +9138,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9205,9 +9205,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9277,9 +9277,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9354,9 +9354,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9436,9 +9436,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9513,9 +9513,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9590,9 +9590,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9667,9 +9667,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9744,9 +9744,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9821,9 +9821,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9893,9 +9893,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -9965,9 +9965,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10042,9 +10042,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10119,9 +10119,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10196,9 +10196,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10263,9 +10263,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10330,9 +10330,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10392,9 +10392,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10459,9 +10459,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -10524,9 +10524,9 @@
               "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
             },
             {
-              "id": 55,
-              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-              "name": "../lib/bootstrapPlugins.js"
+              "id": 116,
+              "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+              "name": "../lib/bootstrapTemplates.js"
             },
             {
               "id": 7,
@@ -13122,7 +13122,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony side effect evaluation",
           "userRequest": "react",
-          "loc": "1:0-25"
+          "loc": "2:36-61"
         },
         {
           "moduleId": 51,
@@ -13131,7 +13131,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:133-138"
+          "loc": "2:197-202"
         },
         {
           "moduleId": 51,
@@ -13140,7 +13140,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:164-169"
+          "loc": "2:228-233"
         },
         {
           "moduleId": 51,
@@ -13149,7 +13149,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:213-218"
+          "loc": "2:277-282"
         },
         {
           "moduleId": 51,
@@ -13158,7 +13158,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:244-249"
+          "loc": "2:308-313"
         },
         {
           "moduleId": 51,
@@ -13167,7 +13167,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:316-321"
+          "loc": "2:380-385"
         },
         {
           "moduleId": 51,
@@ -13176,7 +13176,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:360-365"
+          "loc": "2:424-429"
         },
         {
           "moduleId": 51,
@@ -13185,7 +13185,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:422-427"
+          "loc": "2:486-491"
         },
         {
           "moduleId": 51,
@@ -13194,7 +13194,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:461-466"
+          "loc": "2:525-530"
         },
         {
           "moduleId": 51,
@@ -13203,7 +13203,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "2:542-547"
+          "loc": "2:606-611"
         },
         {
           "moduleId": 52,
@@ -13928,9 +13928,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -14502,9 +14502,9 @@
       "chunks": [
         7
       ],
-      "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-      "issuerId": 55,
-      "issuerName": "../lib/bootstrapPlugins.js",
+      "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+      "issuerId": 116,
+      "issuerName": "../lib/bootstrapTemplates.js",
       "issuerPath": [
         {
           "id": 54,
@@ -14512,9 +14512,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         }
       ],
       "failed": false,
@@ -14627,9 +14627,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -14828,7 +14828,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "components/Router",
-          "loc": "2:481-485"
+          "loc": "2:545-549"
         },
         {
           "moduleId": 53,
@@ -14989,9 +14989,9 @@
       "chunks": [
         7
       ],
-      "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-      "issuerId": 55,
-      "issuerName": "../lib/bootstrapPlugins.js",
+      "issuer": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+      "issuerId": 116,
+      "issuerName": "../lib/bootstrapTemplates.js",
       "issuerPath": [
         {
           "id": 54,
@@ -14999,9 +14999,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         }
       ],
       "failed": false,
@@ -15185,9 +15185,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -15453,7 +15453,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony side effect evaluation",
           "userRequest": "react-static",
-          "loc": "1:25-64"
+          "loc": "2:61-100"
         },
         {
           "moduleId": 51,
@@ -15462,7 +15462,7 @@
           "moduleName": "C:/Users/uptown/Documents/Projects/halfz-blog/src/pages/blog.js",
           "type": "harmony import specifier",
           "userRequest": "react-static",
-          "loc": "2:85-97"
+          "loc": "2:149-161"
         },
         {
           "moduleId": 53,
@@ -15515,9 +15515,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -16729,9 +16729,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17361,9 +17361,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17427,9 +17427,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17498,9 +17498,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17564,9 +17564,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17630,9 +17630,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17777,9 +17777,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17858,9 +17858,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -17944,9 +17944,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -18020,9 +18020,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -18096,9 +18096,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -18902,7 +18902,7 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: C:/Users/uptown/Documents/Projects/halfz-blog/artifacts/react-static-templates.js (referenced with import(), require.resolve)"
       ],
       "depth": 3,
-      "source": "import React from'react';import{useRouteData}from'react-static';//\nimport{Link}from'components/Router';export default function Blog(){var _useRouteData=useRouteData(),posts=_useRouteData.posts;return React.createElement(\"div\",null,React.createElement(\"h1\",null,\"It's blog time.\"),React.createElement(\"div\",null,React.createElement(\"a\",{href:\"#bottom\",id:\"top\"},\"Scroll to bottom!\")),React.createElement(\"br\",null),\"All Posts:\",React.createElement(\"ul\",null,posts.map(function(post){return React.createElement(\"li\",{key:post.id},React.createElement(Link,{to:\"/blog/post/\".concat(post.id,\"/\")},post.title));})),React.createElement(\"a\",{href:\"#top\",id:\"bottom\"},\"Scroll to top!\"));}"
+      "source": "//\nimport{Link}from'components/Router';import React from'react';import{useRouteData}from'react-static';export default function Blog(){var _useRouteData=useRouteData(),posts=_useRouteData.posts;return React.createElement(\"div\",null,React.createElement(\"h1\",null,\"It's blog time.\"),React.createElement(\"div\",null,React.createElement(\"a\",{href:\"#bottom\",id:\"top\"},\"Scroll to bottom!\")),React.createElement(\"br\",null),\"All Posts:\",React.createElement(\"ul\",null,posts.map(function(post){return React.createElement(\"li\",{key:post.id},React.createElement(Link,{to:\"/blog/post/\".concat(post.id,\"/\")},post.title));})),React.createElement(\"a\",{href:\"#top\",id:\"bottom\"},\"Scroll to top!\"));}"
     },
     {
       "id": 52,
@@ -20362,9 +20362,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20424,9 +20424,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20486,9 +20486,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20548,9 +20548,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20605,9 +20605,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20667,9 +20667,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20729,9 +20729,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20791,9 +20791,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20853,9 +20853,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20925,9 +20925,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -20992,9 +20992,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21064,9 +21064,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21141,9 +21141,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21223,9 +21223,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21300,9 +21300,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21377,9 +21377,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21454,9 +21454,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21531,9 +21531,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21608,9 +21608,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21680,9 +21680,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21752,9 +21752,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21829,9 +21829,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21906,9 +21906,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -21983,9 +21983,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -22050,9 +22050,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -22117,9 +22117,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -22179,9 +22179,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -22246,9 +22246,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -22311,9 +22311,9 @@
           "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
         },
         {
-          "id": 55,
-          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapPlugins.js",
-          "name": "../lib/bootstrapPlugins.js"
+          "id": 116,
+          "identifier": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-hot-loader\\webpack.js!C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules\\react-static\\lib\\bootstrapTemplates.js",
+          "name": "../lib/bootstrapTemplates.js"
         },
         {
           "id": 7,
@@ -24426,7 +24426,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1561764289034\n      var cssReload = require(\"C:/Users/uptown/Documents/Projects/halfz-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1561766428537\n      var cssReload = require(\"C:/Users/uptown/Documents/Projects/halfz-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
     },
     {
       "id": 134,
@@ -24559,7 +24559,7 @@
       "errors": [],
       "warnings": [],
       "publicPath": "/",
-      "outputPath": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io",
+      "outputPath": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,

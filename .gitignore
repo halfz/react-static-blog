@@ -38,3 +38,4 @@ npm-debug.log
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+dist/**/*

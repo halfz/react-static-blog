@@ -51,7 +51,7 @@ export default {
     require.resolve('react-static-plugin-sitemap'),
   ],
   paths: {
-    dist: 'halfz.github.io',
+    dist: 'dist',
   },
   devServer: {
     port: 3000,

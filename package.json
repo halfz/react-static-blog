@@ -4,7 +4,7 @@
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build",
+    "build": "react-static build && del-cli \"halfz.github.io/!(.git/**)\" && copyfiles -u 1 dist/**/* halfz.github.io",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
     "lint:staged": "lint-staged"
@@ -48,6 +48,8 @@
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.6.0",
     "lint-staged": "8.1.7",
-    "pre-commit": "1.2.2"
+    "pre-commit": "1.2.2",
+    "copyfiles": "^2.1.0",
+    "del-cli": "^2.0.0"
   }
 }

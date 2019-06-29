@@ -27,8 +27,8 @@
   "paths": {
     "ROOT": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog",
     "SRC": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\src",
-    "DIST": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io",
-    "ASSETS": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io",
+    "DIST": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist",
+    "ASSETS": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist",
     "PLUGINS": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\plugins",
     "TEMP": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\tmp",
     "ARTIFACTS": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\artifacts",
@@ -36,8 +36,8 @@
     "NODE_MODULES": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules",
     "EXCLUDE_MODULES": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\node_modules",
     "PACKAGE": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io\\index.html",
-    "STATIC_DATA": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\halfz.github.io\\staticData"
+    "HTML_TEMPLATE": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\uptown\\Documents\\Projects\\halfz-blog\\dist\\staticData"
   },
   "devServer": {
     "host": "127.0.0.1",
