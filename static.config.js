@@ -1,54 +1,100 @@
-import axios from 'axios';
-import path from 'path';
+/* eslint-disable react/prop-types */
+import _ from 'lodash';
+import React from 'react';
+
+import { makePageRoutes } from 'react-static/node';
+import loadData from './internal/data';
 
 export default {
+
+  siteRoot: 'https://halfz.github.io',
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    );
+    const Data = await loadData();
+    const pageRoutersWithPosts = (posts, basePath = '/', additionalData = {}, size = 5) => makePageRoutes({
+      items: posts,
+      pageSize: size,
+      pageToken: 'page',
+      route: {
+        path: basePath,
+        template: 'src/pages/',
+      },
+      decorate: (items, i, totalPages) => ({
+        // For each page, supply the posts, page and totalPages
+        getData: () => ({
+          basePath,
+          posts: items,
+          currentPage: i,
+          totalPages,
+          tags: Data.tags,
+          categories: Data.categories,
+          ...(additionalData),
+        }),
+      }),
+    });
+
+    let categoryRouters = [];
+    _.forEach(Data.categories, (data, key) => {
+      categoryRouters = _.concat(categoryRouters, pageRoutersWithPosts(data, `category/${key}/`, {
+        category: key,
+      }));
+    });
+
+
+    let tagRouters = [];
+    _.forEach(Data.tags, (data, key) => {
+      tagRouters = _.concat(tagRouters, pageRoutersWithPosts(data, `tag/${key}/`, {
+        tag: key,
+      }));
+    });
+    let authorRouters = [];
+    console.log(Data.authorPosts);
+    _.forEach(Data.authorPosts, (data, key) => {
+      authorRouters = _.concat(authorRouters, pageRoutersWithPosts(data, `author/${key}/`, {
+        author: key,
+      }));
+    });
 
     return [
-      {
-        path: '/blog',
+      ...pageRoutersWithPosts(Data.posts),
+
+      ...(Data.posts.map((post) => ({
+        path: `/post/${post.id}`,
+        template: 'src/pages/post',
         getData: () => ({
-          posts,
+          post,
         }),
-        children: posts.map((post) => ({
-          path: `/post/${post.id}`,
-          template: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
-      },
+      }))),
+      ...(tagRouters),
+      ...(categoryRouters),
+      ...(authorRouters),
       // A 404 component
       {
         path: '404',
         template: 'src/pages/404',
       },
-      {
-        path: '/',
-        template: 'src/pages/',
-      },
-      {
-        path: '/blog',
-        template: 'src/pages/blog',
-      },
-      {
-        path: '/about',
-        template: 'src/pages/about',
-      },
     ];
   },
+  Document: (
+    {
+      Html,
+      Head,
+      Body,
+      children,
+    },
+  ) => (
+    <Html lang="ko-KR">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
   plugins: [
-    [
-      require.resolve('react-static-plugin-source-filesystem'),
-      {
-        location: path.resolve('./src/pages'),
-      },
-    ],
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap'),
+    require.resolve('react-static-plugin-styled-components'),
+    require.resolve('./internal/webpack'),
   ],
   paths: {
     dist: 'dist',

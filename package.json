@@ -1,13 +1,16 @@
 {
-  "name": "halfz-blog",
-  "private": true,
+  "name": "react-static-blog",
+  "version": "0.1.0",
+  "author": "HALFZ Inc",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build && del-cli \"halfz.github.io/!(.git/**)\" && copyfiles -u 1 dist/**/* halfz.github.io",
+    "build": "react-static build && del-cli \"halfz.github.io/!(.git)\" && copyfiles -u 1 dist/**/* halfz.github.io",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "build-webfont": "node withBabel.js --entry=./internal/initFont.js",
+    "testDataLoader": "node withBabel.js --entry=./internal/data/loader.js"
   },
   "lint-staged": {
     "*.js": [
@@ -17,19 +20,35 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "7.1.0",
     "react-static-plugin-reach-router": "7.0.10",
     "react-static-plugin-sitemap": "7.0.10",
     "react-static-plugin-source-filesystem": "7.1.0",
-    "styled-components": "^4.2.0"
+    "react-static-plugin-styled-components": "^7.0.10",
+    "styled-components": "^4.2.0",
+    "react-redux": "^7.1.0",
+    "redux": "4.0.1",
+    "redux-immutable": "4.0.0",
+    "redux-saga": "1.0.2",
+    "immutable": "3.8.2",
+    "auto-bind": "^2.1.0",
+    "react-tagcloud": "^1.4.0",
+    "moment": "^2.24.0",
+    "js-yaml": "3.13.0",
+    "react-markdown": "^4.1.0",
+    "react-highlight": "^0.12.0",
+    "highlight.js": "^9.15.8",
+    "sharp": "^0.22.1"
   },
   "pre-commit": [
     "lint:staged"
   ],
   "devDependencies": {
+    "@svgr/webpack": "4.3.0",
+    "image-webpack-loader": "4.6.0",
     "babel-eslint": "9.x",
     "eslint": "5.16.0",
     "eslint-config-react-app": "^3.0.8",
@@ -42,14 +61,17 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "1.6.0",
+    "eslint-plugin-redux-saga": "0.10.0",
     "serve": "10.1.2",
     "stylelint": "9.10.1",
     "stylelint-config-standard": "18.2.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.6.0",
-    "lint-staged": "8.1.7",
-    "pre-commit": "1.2.2",
+    "lint-staged": "^8.2.1",
+    "pre-commit": "^1.2.2",
     "copyfiles": "^2.1.0",
-    "del-cli": "^2.0.0"
+    "del-cli": "^2.0.0",
+    "css": "^2.2.4",
+    "lodash": "^4.17.11"
   }
 }

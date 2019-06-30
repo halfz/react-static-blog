@@ -17,6 +17,7 @@ module.exports = {
   'plugins': [
     'import',
     'react',
+    'redux-saga',
     'jsx-a11y',
     'react-hooks',
   ],
@@ -92,6 +93,8 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'require-yield': 0,
+    'redux-saga/no-yield-in-race': 2,
+    'redux-saga/yield-effects': 2,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
@@ -100,7 +103,6 @@ module.exports = {
       'node': {
         'paths': ['src'],
       },
-
     },
     'react': {
       'pragma': 'React',

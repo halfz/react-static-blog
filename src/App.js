@@ -1,39 +1,41 @@
-//
+import ScrollToTop from 'components/Common/ScrollToTop';
+import { WindowStatusProvider } from 'components/Context/WindowStatusContext';
+import { Router } from 'components/Router';
 import {
-  Link,
-  Router,
-} from 'components/Router';
-import Dynamic from 'containers/Dynamic';
-import React from 'react';
+  ModalMain,
+  ModalProvider,
+} from 'halfz/react-simple-modal';
+import ModalContainer from 'halfz/react-simple-modal/ModalContainer';
+import 'highlight.js/styles/tomorrow-night.css';
+import React, { Suspense } from 'react';
 import {
-  addPrefetchExcludes,
   Root,
   Routes,
 } from 'react-static';
-
+import { LocationProvider } from 'utils/useLocation';
 import './app.css';
-
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic']);
+import './generated/fonts.css';
 
 function App() {
   return (
-    <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
-      </nav>
-      <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </div>
-    </Root>
+    <LocationProvider>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ModalProvider>
+          <WindowStatusProvider>
+            <ModalMain>
+              <ScrollToTop>
+                <Root>
+                  <Router>
+                    <Routes path="*" />
+                  </Router>
+                </Root>
+              </ScrollToTop>
+            </ModalMain>
+            <ModalContainer />
+          </WindowStatusProvider>
+        </ModalProvider>
+      </Suspense>
+    </LocationProvider>
   );
 }
 
