@@ -47,7 +47,6 @@ export default {
       }));
     });
     let authorRouters = [];
-    console.log(Data.authorPosts);
     _.forEach(Data.authorPosts, (data, key) => {
       authorRouters = _.concat(authorRouters, pageRoutersWithPosts(data, `author/${key}/`, {
         author: key,

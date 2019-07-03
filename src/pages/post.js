@@ -13,7 +13,10 @@ import {
 import React, { useMemo } from 'react';
 import Highlight from 'react-highlight';
 import ReactMarkdown from 'react-markdown';
-import { useRouteData } from 'react-static';
+import {
+  Head,
+  useRouteData,
+} from 'react-static';
 import styled from 'styled-components';
 
 export const MarkDownWrapper = styled.div`
@@ -44,6 +47,10 @@ const MarkDown = styled(ReactMarkdown)`
     @media (max-width: ${MOBILE_WIDTH}) {
       max-width: 100%;
     }
+  }
+  
+  p {
+    line-height: 1.4em;
   }
   
   ul ol {
@@ -81,6 +88,15 @@ function Code({ language, value }) {
   );
 }
 
+// eslint-disable-next-line react/prop-types
+function Image({ src, alt }) {
+  if (!src.startsWith('http')) {
+    // eslint-disable-next-line global-require
+    return <img src={require(`../../data/post/${src}`)} alt={alt} />;
+  }
+  return <img src={src} alt={alt} />;
+}
+
 const Author = styled(Link)`
   color: ${Colors.greyishBrown};
 `;
@@ -110,6 +126,21 @@ export default function Post() {
   return (
     <Wrapper>
       <Menu />
+      <Head>
+        <meta charSet="UTF-8" />
+        <title>
+          {post.title}
+          {' - HALFZ 기술 블로그'}
+        </title>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.description} />
+        <meta property="og:type" content="article" />
+        <meta property="article:author" content={post.author.name} />
+        <meta property="article:tag" content={post.tags ? post.tags.join(', ') : ''} />
+        <meta property="article:section " content={post.category ? post.category : ''} />
+        <meta property="article:published_time" content={date} />
+
+      </Head>
       <Title title={post.title} />
       <Breadcrumb data={breadcrumbData} />
       <Main>
@@ -127,6 +158,7 @@ export default function Post() {
             renderers={{
               link: RouterLink,
               code: Code,
+              image: Image,
             }}
           />
         </MarkDownWrapper>

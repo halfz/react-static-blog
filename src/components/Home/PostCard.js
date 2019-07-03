@@ -1,5 +1,6 @@
 import { Link } from '@reach/router';
 import { Colors } from 'assets';
+import { MOBILE_WIDTH } from 'const';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
@@ -9,6 +10,11 @@ const Title = styled.h2`
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
+  
+  a {
+    text-decoration: none;
+    color: ${Colors.black33};
+  }
 `;
 
 const Row = styled.div`
@@ -22,6 +28,11 @@ const Info = styled.h5`
   font-size: 14px;
   font-weight: normal;
   margin: 12px 0;
+  display: flex;
+  
+  @media (max-width: ${MOBILE_WIDTH}) {
+    flex-direction: column;
+  }
 `;
 const Date = styled.span`
   color: ${Colors.pinkishGrey};
@@ -34,6 +45,10 @@ const AuthorProfile = styled.img`
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  
+  @media (max-width: ${MOBILE_WIDTH}) {
+    display: none;
+  }
 `;
 const Description = styled.pre`
   font-size: 14px;
@@ -87,7 +102,7 @@ const PostCard = ({ post }) => {
   return (
     <Wrapper>
       <Title>
-        {post.title}
+        <Link to={`/post/${post.id}`}>{post.title}</Link>
         {post.category ? (
           <Category key={post.category} to={`/category/${post.category}`}>
             {post.category}
@@ -113,10 +128,12 @@ const PostCard = ({ post }) => {
           <Date>
             {date}
           </Date>
-          &nbsp;&nbsp;by&nbsp;
-          <Author to={`/author/${post.author.id}`}>
-            {post.author.name}
-          </Author>
+          <div>
+            &nbsp;&nbsp;by&nbsp;
+            <Author to={`/author/${post.author.id}`}>
+              {post.author.name}
+            </Author>
+          </div>
           {post.author.profileBase64 ? <AuthorProfile src={post.author.profileBase64} /> : null}
         </Info>
       </Row>

@@ -147,7 +147,7 @@ const Footer = ({ topBorder, bottomFix }) => (
         <a href="https://github.com/nozzle/react-static" target="_blank">react-static</a>
       </Info>
     </Row>
-    <Copyright>COPYRIGHT (C) 2019 NextUnicorn ALL RIGHTS RESERVED</Copyright>
+    <Copyright>COPYRIGHT (C) 2019 HALFZ ALL RIGHTS RESERVED</Copyright>
   </Wrapper>
 );
 

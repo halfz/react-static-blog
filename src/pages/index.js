@@ -7,11 +7,12 @@ import Menu from 'components/Shared/Menu';
 import Title from 'components/Shared/Title';
 import { MOBILE_WIDTH } from 'const';
 import each from 'lodash/each';
-import map from 'lodash/map';
 import range from 'lodash/range';
 import React from 'react';
-
-import { useRouteData } from 'react-static';
+import {
+  Head,
+  useRouteData,
+} from 'react-static';
 import { TagCloud } from 'react-tagcloud';
 import styled from 'styled-components';
 import useLocation from 'utils/useLocation';
@@ -52,13 +53,13 @@ const TagTitle = styled.h3`
   color: ${Colors.unicorn};
   font-weight: bold;
 `;
-
-const Category = styled(Link)`
-  margin-top: 10px;
-  text-decoration: none;
-  color: ${Colors.greyishBrown};
-  display: block;
-`;
+//
+// const Category = styled(Link)`
+//   margin-top: 10px;
+//   text-decoration: none;
+//   color: ${Colors.greyishBrown};
+//   display: block;
+// `;
 export const MobileBr = styled.br`
   display: none;
     
@@ -77,11 +78,12 @@ const PageBlock = styled(Link)`
 `;
 export default () => {
   const {
-    posts, currentPage, totalPages, category, tag, basePath, tags, categories, author,
+    posts, currentPage, totalPages, category, tag, basePath, tags, author,
   } = useRouteData();
 
   const { navigate } = useLocation();
 
+  let metaTitle = 'HALFZ의 기술 블로그에 당도한 것을 환영하오. 낯선이여. - HALFZ 기술 블로그';
   const title = (
     <>
       HALFZ의 기술 블로그에
@@ -108,6 +110,7 @@ export default () => {
   const breadcrumbData = [];
 
   if (category) {
+    metaTitle = `Category: ${author} - HALFZ 기술 블로그`;
     breadcrumbData.push({
       title: 'Home',
       link: '/',
@@ -122,6 +125,7 @@ export default () => {
   }
 
   if (author) {
+    metaTitle = `Author: ${author} - HALFZ 기술 블로그`;
     breadcrumbData.push({
       title: 'Home',
       link: '/',
@@ -135,6 +139,7 @@ export default () => {
     });
   }
   if (tag) {
+    metaTitle = `Tag: ${author} - HALFZ 기술 블로그`;
     breadcrumbData.push({
       title: 'Home',
       link: '/',
@@ -149,6 +154,12 @@ export default () => {
   }
   return (
     <Wrapper>
+      <Head>
+        <meta charSet="UTF-8" />
+        <title>
+          {metaTitle}
+        </title>
+      </Head>
       <Menu />
       <Title title={title} />
       {breadcrumbData.length > 0 ? <Breadcrumb data={breadcrumbData} /> : null}
@@ -160,20 +171,6 @@ export default () => {
           </Pagination>
         </PostList>
         <Categories>
-          <TagTitle>
-            Categories
-          </TagTitle>
-          <div>
-            {map(categories, (v, i) => (
-              <Category key={i} to={`/category/${i}`}>
-                {i}
-                (
-                {v.length}
-                )
-              </Category>
-            ))}
-          </div>
-          <br />
           <TagTitle>
             Tags
           </TagTitle>

@@ -4,6 +4,7 @@ const _ = require('lodash');
 const yaml = require('js-yaml');
 const sharp = require('sharp');
 
+
 const loadData = async () => {
   const tags = {};
   const categories = {};
@@ -15,7 +16,14 @@ const loadData = async () => {
     for (let i = 0; i < authors.length; i += 1) {
       const authorId = authors[i];
       const authorData = {};
-      const author = fs.readdirSync(path.join(process.cwd(), `./data/author/${authorId}`));
+      const dirPath = path.join(process.cwd(), `./data/author/${authorId}`);
+      const stats = fs.statSync(dirPath);
+
+      if (stats.isFile()) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+      const author = fs.readdirSync(dirPath);
       if (!_.includes(author, 'about.md')) {
         throw new Error(`${authorId}/about.md is not exists.`);
       }
@@ -48,7 +56,12 @@ display_name: XXX XXX
   const loadPosts = async (authors) => {
     const Posts = [];
     const posts = fs.readdirSync(path.join(process.cwd(), './data/post'));
+
     _.forEach(posts, (postName) => {
+      if (!postName.endsWith('.md')) {
+        return;
+      }
+
       let postKey = postName.substr(0, _.lastIndexOf(postName, '.'));
       postKey = _.replace(postKey, /[^a-zA-Z0-9_-]+/g, '');
       let postfix = 0;
@@ -80,7 +93,6 @@ tags: 테스트, test
 
       _.merge(postData, parsed);
       postData.markdown = _.trim(post.substr(end + 5));
-
       postData.id = postKey;
 
       if (typeof postData.tags === 'string') {

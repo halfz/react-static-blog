@@ -13,6 +13,8 @@ import {
   Routes,
 } from 'react-static';
 import { LocationProvider } from 'utils/useLocation';
+import '../data/post/resource';
+import '../data/author/resource';
 import './app.css';
 import './generated/fonts.css';
 
