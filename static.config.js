@@ -86,7 +86,11 @@ export default {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </Head>
-      <Body>{children}</Body>
+      <Body>
+        <div id="fb-root"></div>
+        {children}
+      </Body>
+      <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.3&appId=188958451549867&autoLogAppEvents=1" />
     </Html>
   ),
   plugins: [

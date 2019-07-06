@@ -46,7 +46,7 @@ const Breadcrumb = ({ data }) => {
   const { navigate } = useLocation();
   return (
     <Wrapper>
-      {data ? data.map((v) => (<Each key={v.link} disabled={!v.link} onClick={() => v.link ? navigate(v.link) : null}>{startCase(v.title)}</Each>)) : null}
+      {data ? data.map((v, i) => (<Each key={i.toString()} disabled={!v.link} onClick={() => v.link ? navigate(v.link) : null}>{startCase(v.title)}</Each>)) : null}
     </Wrapper>
   );
 };

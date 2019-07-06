@@ -5,11 +5,9 @@ import Footer from 'components/Shared/Footer';
 import Menu from 'components/Shared/Menu';
 import Title from 'components/Shared/Title';
 import { MOBILE_WIDTH } from 'const';
+import { useComponentDidMount } from 'halfz/react-hook-ex';
 import moment from 'moment';
-import {
-  Main,
-  Wrapper,
-} from 'pages';
+import { Wrapper } from 'pages';
 import React, { useMemo } from 'react';
 import Highlight from 'react-highlight';
 import ReactMarkdown from 'react-markdown';
@@ -26,6 +24,7 @@ export const MarkDownWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 70px 70px;
+  padding-top: 20px;
   
   @media (max-width: ${MOBILE_WIDTH}) {
     width: 100%;
@@ -38,36 +37,54 @@ export const MarkDownWrapper = styled.div`
 const MarkDown = styled(ReactMarkdown)`
   font-size: 14px;
   width: 100%;
-  color: ${Colors.black33};
+  color: ${Colors.greyishBrown};
   word-break: break-word;
+  line-height: 2em;
   
   img {
-    max-width: 760px;
+    max-width: 720px;
       
     @media (max-width: ${MOBILE_WIDTH}) {
       max-width: 100%;
     }
   }
   
-  p {
-    line-height: 1.4em;
+  ul,
+  ol {
+    padding-inline-start: 20px;
   }
   
-  ul ol {
-    padding-inline-start: 20px;
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   
   a {
     color: ${Colors.unicorn};
+    text-decoration: none;
   }
 `;
 
-const Info = styled.h5`
-  display: flex;
-  justify-content: flex-end;
+const BlackCode = styled.code`
+  background-color: ${Colors.greyishBrown};
+  color: #c5c8c6;
+`;
+const Info = styled.div`
+  text-align: right;
   align-items: center;
   font-weight: normal;
-  margin: 20px 0;
+  font-size: 15px;
+  width: 100%;
 `;
 
 // eslint-disable-next-line react/prop-types
@@ -78,6 +95,13 @@ function RouterLink({ href, children }) {
       : <Link to={href}>{children}</Link>
   );
 }
+
+
+// eslint-disable-next-line react/prop-types
+function RouterInlineCode({ children }) {
+  return <BlackCode>{children}</BlackCode>;
+}
+
 
 // eslint-disable-next-line react/prop-types
 function Code({ language, value }) {
@@ -92,7 +116,7 @@ function Code({ language, value }) {
 function Image({ src, alt }) {
   if (!src.startsWith('http')) {
     // eslint-disable-next-line global-require
-    return <img src={require(`../../data/post/${src}`)} alt={alt} />;
+    return <img src={require(`../../data/post/${src.substr(2)}`)} alt={alt} />;
   }
   return <img src={src} alt={alt} />;
 }
@@ -109,6 +133,27 @@ const AuthorProfile = styled.img`
 const Date = styled.span`
   color: ${Colors.pinkishGrey};
 `;
+
+const Row = styled.div`
+  display: flex;
+  margin-bottom: 20px;
+  
+  @media (max-width: ${MOBILE_WIDTH}) {
+    flex-direction: column;
+  }
+`;
+
+export const Main = styled.div`
+  display: flex;
+  max-width: 900px;
+  margin: 16px auto;
+  flex-direction: column;
+  
+  @media (max-width: ${MOBILE_WIDTH}) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+`;
 export default function Post() {
   const { post } = useRouteData();
   const date = useMemo(() => moment(post.date).format('YYYY-MM-DD'), [post.date]);
@@ -123,6 +168,12 @@ export default function Post() {
       title: post.title,
     },
   ];
+  useComponentDidMount(() => {
+    if (typeof FB !== 'undefined') {
+      // eslint-disable-next-line no-undef
+      FB.XFBML.parse();
+    }
+  });
   return (
     <Wrapper>
       <Menu />
@@ -139,28 +190,46 @@ export default function Post() {
         <meta property="article:tag" content={post.tags ? post.tags.join(', ') : ''} />
         <meta property="article:section " content={post.category ? post.category : ''} />
         <meta property="article:published_time" content={date} />
-
       </Head>
       <Title title={post.title} />
       <Breadcrumb data={breadcrumbData} />
       <Main>
         <MarkDownWrapper>
-          <Info>
-            <Date>{date}</Date>
-            &nbsp;&nbsp;by&nbsp;
-            <Author to={`/author/${post.author.id}`}>
-              {post.author.name}
-            </Author>
-            {post.author.profileBase64 ? <AuthorProfile src={post.author.profileBase64} /> : null}
-          </Info>
           <MarkDown
             source={`${post.markdown}`}
             renderers={{
               link: RouterLink,
               code: Code,
               image: Image,
+              inlineCode: RouterInlineCode,
             }}
           />
+          <Row>
+            <div>
+              <div
+                className="fb-like"
+                data-href={`https://halfz.github.io/post/${post.id}`}
+                data-width=""
+                data-layout="button_count"
+                data-action="like"
+                data-size="small"
+                data-show-faces="true"
+                data-share="true"
+              />
+              <div className="fb-save" data-uri="https://www.instagram.com/facebook/" data-size="small" />
+            </div>
+            <Info>
+              <Date>{date}</Date>
+              &nbsp;&nbsp;by&nbsp;
+              <Author to={`/author/${post.author.id}`}>
+                {post.author.name}
+              </Author>
+              {post.author.profileBase64 ? <AuthorProfile src={post.author.profileBase64} /> : null}
+            </Info>
+          </Row>
+          <Row>
+            <div className="fb-comments" data-href={`https://halfz.github.io/post/${post.id}`} data-width="100%" data-numposts="5" />
+          </Row>
         </MarkDownWrapper>
       </Main>
       <Footer />

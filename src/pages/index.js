@@ -83,16 +83,10 @@ export default () => {
 
   const { navigate } = useLocation();
 
-  let metaTitle = 'HALFZ의 기술 블로그에 당도한 것을 환영하오. 낯선이여. - HALFZ 기술 블로그';
+  let metaTitle = 'HALFZ 기술 블로그';
   const title = (
     <>
-      HALFZ의 기술 블로그에
-      <MobileBr />
-      {' '}
-      당도한 것을 환영하오.
-      {' '}
-      <MobileBr />
-      낯선이여.
+      HALFZ 기술 블로그
     </>
   );
   let min = 99999999;
