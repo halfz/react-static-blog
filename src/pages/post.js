@@ -188,7 +188,7 @@ export default function Post() {
         <meta property="og:type" content="article" />
         <meta property="article:author" content={post.author.name} />
         <meta property="article:tag" content={post.tags ? post.tags.join(', ') : ''} />
-        <meta property="article:section " content={post.category ? post.category : ''} />
+        <meta property="article:section " content={post.category ? post.category : 'All'} />
         <meta property="article:published_time" content={date} />
       </Head>
       <Title title={post.title} />
