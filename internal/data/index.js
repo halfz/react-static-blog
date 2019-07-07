@@ -93,6 +93,18 @@ tags: 테스트, test
 
       _.merge(postData, parsed);
       postData.markdown = _.trim(post.substr(end + 5));
+      const images = /(?:!\[(.*?)\]\((.*?)\))/gm;
+      const imageLinks = [];
+      while (true) {
+        const match = images.exec(postData.markdown);
+        if (!match) {
+          break;
+        }
+        imageLinks.push(match[2]);
+      }
+
+      postData.images = imageLinks;
+
       postData.id = postKey;
 
       if (typeof postData.tags === 'string') {

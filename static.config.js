@@ -82,14 +82,19 @@ export default {
     },
   ) => (
     <Html lang="ko-KR">
+      <meta name="google-site-verification" content="GaDEytoAgRDZe6vuWWIVU3EVN-pGSXaVZJSdNBNuh5M" />
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </Head>
       <Body>
-        <div id="fb-root"></div>
+        <div id="fb-root" />
         {children}
       </Body>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143407450-1" />
+      <script>
+        {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-143407450-1');`}
+      </script>
       <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.3&appId=188958451549867&autoLogAppEvents=1" />
     </Html>
   ),
