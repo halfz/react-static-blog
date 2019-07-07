@@ -12,6 +12,7 @@ import { Wrapper } from 'pages';
 import React, { useMemo } from 'react';
 import Highlight from 'react-highlight';
 import ReactMarkdown from 'react-markdown';
+import filter from 'lodash/filter';
 import {
   Head,
   useRouteData,
@@ -79,6 +80,7 @@ const MarkDown = styled(ReactMarkdown)`
 const BlackCode = styled.code`
   background-color: ${Colors.greyishBrown};
   color: #c5c8c6;
+  font-weight: bold;
 `;
 const Info = styled.div`
   text-align: right;
@@ -208,7 +210,7 @@ export default function Post() {
               },
               headline: post.title,
               // eslint-disable-next-line global-require
-              image: post.images.map((src) => require(`../../data/post/${src.substr(2)}`)),
+              image: filter(post.images.map((src) => require(`../../data/post/${src.substr(2)}`)), (v) => !v.startsWith('data')),
               datePublished: moment(post.date).format(),
               dateModified: moment(post.date).format(),
               author: {

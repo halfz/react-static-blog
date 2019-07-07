@@ -58,7 +58,7 @@ export default () => ({
               },
             },
           },
-          'url-loader',
+          'file-loader?name=static/[hash].[ext]',
         ],
       });
 
