@@ -220,7 +220,7 @@ export default function Post() {
                 name: 'HALFZ',
                 logo: {
                   '@type': 'ImageObject',
-                  url: JPGs.HALFZLogo,
+                  url: `${JPGs.HALFZLogo}`,
                 },
               },
               description: '하프스는 스타트업&투자자 AI 매칭 플랫폼 서비스 넥스트 유니콘을 제공합니다.',

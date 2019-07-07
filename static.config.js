@@ -82,8 +82,8 @@ export default {
     },
   ) => (
     <Html lang="ko-KR">
-      <meta name="google-site-verification" content="GaDEytoAgRDZe6vuWWIVU3EVN-pGSXaVZJSdNBNuh5M" />
       <Head>
+        <meta name="google-site-verification" content="GaDEytoAgRDZe6vuWWIVU3EVN-pGSXaVZJSdNBNuh5M" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </Head>
