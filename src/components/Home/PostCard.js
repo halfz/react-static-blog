@@ -52,7 +52,8 @@ const AuthorProfile = styled.img`
 `;
 const Description = styled.pre`
   font-size: 14px;
-  word-break: keep-all;
+  word-break: break-word;
+  white-space: pre-wrap;
   line-break: auto;
   text-overflow: ellipsis;
 `;
