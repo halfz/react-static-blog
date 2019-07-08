@@ -33,7 +33,7 @@ const loadData = async () => {
       const end = aboutMD.indexOf('--->');
       if (end === -1 || !aboutMD.startsWith('<!---')) {
         throw new Error(`${authorId}/about.md does not have meta data
-<!--- 
+<!---
 display_name: XXX XXX
  --->`);
       }
@@ -80,7 +80,7 @@ display_name: XXX XXX
       const end = post.indexOf('--->');
       if (end === -1 || !post.startsWith('<!---')) {
         throw new Error(`${post} does not have meta data
-<!--- 
+<!---
 title: 테스트
 date: 2019-06-25
 description: 테스트입니다.
@@ -93,6 +93,18 @@ tags: 테스트, test
 
       _.merge(postData, parsed);
       postData.markdown = _.trim(post.substr(end + 5));
+      const images = /(?:!\[(.*?)\]\((.*?)\))/gm;
+      const imageLinks = [];
+      while (true) {
+        const match = images.exec(postData.markdown);
+        if (!match) {
+          break;
+        }
+        imageLinks.push(match[2]);
+      }
+
+      postData.images = imageLinks;
+
       postData.id = postKey;
 
       if (typeof postData.tags === 'string') {

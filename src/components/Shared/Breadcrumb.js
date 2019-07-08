@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   padding-left: 72px;
   align-items: center;
   border-bottom: ${Colors.whiteEA} 1px solid;
-  
+
   @media (max-width: ${MOBILE_WIDTH}) {
     display: none;
   }
@@ -27,7 +27,7 @@ const Each = styled.div`
   letter-spacing: -0.5px;
   color: ${Colors.greyishBrown};
   cursor: ${(props) => props.disabled ? `default` : `pointer`};
-  
+
   & + & {
     ::before {
       content: '>';
@@ -37,16 +37,55 @@ const Each = styled.div`
       margin-right: 18px;
       cursor: default;
     }
-    
+
     margin-left: 18px;
   }
 `;
+/*
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+  <li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a itemtype="https://schema.org/Thing"
+       itemprop="item" href="https://example.com/books">
+        <span itemprop="name">Books</span></a>
+    <meta itemprop="position" content="1" />
+  </li>
+  ›
+  <li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a itemtype="https://schema.org/Thing"
+       itemprop="item" href="https://example.com/books/sciencefiction">
+      <span itemprop="name">Science Fiction</span></a>
+    <meta itemprop="position" content="2" />
+  </li>
+  ›
+  <li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a itemtype="https://schema.org/Thing"
+       itemprop="item" href="https://example.com/books/sciencefiction/ancillaryjustice">
+      <span itemprop="name">Ancillary Justice</span></a>
+    <meta itemprop="position" content="3" />
+  </li>
+</ol>
 
+* */
 const Breadcrumb = ({ data }) => {
   const { navigate } = useLocation();
   return (
-    <Wrapper>
-      {data ? data.map((v, i) => (<Each key={i.toString()} disabled={!v.link} onClick={() => v.link ? navigate(v.link) : null}>{startCase(v.title)}</Each>)) : null}
+    <Wrapper itemscope itemtype="https://schema.org/BreadcrumbList">
+      {data ? data.map((v, i) => (
+        <Each
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+
+          key={i.toString()}
+          disabled={!v.link}
+          onClick={() => v.link ? navigate(v.link) : null}
+        >
+          {startCase(v.title)}
+        </Each>
+      )) : null}
     </Wrapper>
   );
 };
