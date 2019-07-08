@@ -1,4 +1,3 @@
-import { Link } from '@reach/router';
 import { Colors } from 'assets';
 import { MOBILE_WIDTH } from 'const';
 import moment from 'moment';
@@ -37,7 +36,7 @@ const Info = styled.h5`
 const Date = styled.span`
   color: ${Colors.pinkishGrey};
 `;
-const Author = styled(Link)`
+const Author = styled.a`
   color: ${Colors.greyishBrown};
 `;
 const AuthorProfile = styled.img`
@@ -60,7 +59,7 @@ const Description = styled.pre`
 const Tags = styled.p`
   font-size: 12px;
 `;
-const Tag = styled(Link)`
+const Tag = styled.a`
   color: ${Colors.pinkishGrey};
   text-decoration: none;
   margin-top: 15px;
@@ -70,7 +69,7 @@ const Tag = styled(Link)`
   }
 `;
 
-const Category = styled(Link)`
+const Category = styled.a`
   color: ${Colors.pinkishGrey};
   font-size: 14px;
   margin-top: 15px;
@@ -86,7 +85,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const ReadMore = styled(Link)`
+const ReadMore = styled.a`
   cursor: pointer;
   font-weight: bold;
   border: 1px solid ${Colors.pinkishGrey};
@@ -103,9 +102,9 @@ const PostCard = ({ post }) => {
   return (
     <Wrapper>
       <Title>
-        <Link to={`/post/${post.id}`}>{post.title}</Link>
+        <a href={`/post/${post.id}`}>{post.title}</a>
         {post.category ? (
-          <Category key={post.category} to={`/category/${post.category}`}>
+          <Category key={post.category} href={`/category/${post.category}`}>
             {post.category}
           </Category>
         ) : null}
@@ -116,7 +115,7 @@ const PostCard = ({ post }) => {
       <div>
         <Tags>
           {post.tags ? post.tags.map((v) => (
-            <Tag key={v} to={`/tag/${v}`}>
+            <Tag key={v} href={`/tag/${v}`}>
               #
               {v}
             </Tag>
@@ -124,14 +123,14 @@ const PostCard = ({ post }) => {
         </Tags>
       </div>
       <Row>
-        <ReadMore to={`/post/${post.id}`}>READ MORE »</ReadMore>
+        <ReadMore href={`/post/${post.id}`}>READ MORE »</ReadMore>
         <Info>
           <Date>
             {date}
           </Date>
           <div>
             &nbsp;&nbsp;by&nbsp;
-            <Author to={`/author/${post.author.id}`}>
+            <Author href={`/author/${post.author.id}`}>
               {post.author.name}
             </Author>
           </div>

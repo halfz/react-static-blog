@@ -1,4 +1,3 @@
-import { Link } from '@reach/router';
 import { Colors } from 'assets';
 import PostCard from 'components/Home/PostCard';
 import Breadcrumb from 'components/Shared/Breadcrumb';
@@ -68,7 +67,7 @@ export const MobileBr = styled.br`
   }
 `;
 
-const PageBlock = styled(Link)`
+const PageBlock = styled.a`
   float: left;
   display: inline;
   padding: 8px 16px;
@@ -161,7 +160,7 @@ export default () => {
         <PostList>
           {posts.map((v) => <PostCard post={v} key={v.id} />)}
           <Pagination>
-            {range(totalPages).map((v) => <PageBlock active={v === (currentPage - 1)} to={`${basePath}page/${v + 1}`} key={v.toString()}>{v + 1}</PageBlock>)}
+            {range(totalPages).map((v) => <PageBlock active={v === (currentPage - 1)} href={`${basePath}page/${v + 1}`} key={v.toString()}>{v + 1}</PageBlock>)}
           </Pagination>
         </PostList>
         <Categories>

@@ -1,4 +1,3 @@
-import { Link } from '@reach/router';
 import { Colors } from 'assets';
 import JPGs from 'assets/jpg';
 import Svgs from 'assets/svg';
@@ -45,7 +44,7 @@ const HeaderInner = styled.div`
     transition-duration: 0s;
   }
 `;
-const HeaderLeft = styled(Link)`
+const HeaderLeft = styled.a`
   height: ${(props) => (props.main) ? '72px' : '52px'};
   display: flex;
   font-size: 28px;
@@ -112,7 +111,7 @@ const Comp = memo(({ transparent, main }) => {
   return (
     <HeaderWrapper main={main}>
       <HeaderInner transparent={transparent} main={main}>
-        <HeaderLeft to="/">
+        <HeaderLeft href="/">
           <Logo src={JPGs.HALFZLogo} />
           기술 블로그
         </HeaderLeft>

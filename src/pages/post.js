@@ -1,4 +1,3 @@
-import { Link } from '@reach/router';
 import Colors from 'assets/color';
 import JPGs from 'assets/jpg';
 import Breadcrumb from 'components/Shared/Breadcrumb';
@@ -7,12 +6,12 @@ import Menu from 'components/Shared/Menu';
 import Title from 'components/Shared/Title';
 import { MOBILE_WIDTH } from 'const';
 import { useComponentDidMount } from 'halfz/react-hook-ex';
+import filter from 'lodash/filter';
 import moment from 'moment';
 import { Wrapper } from 'pages';
 import React, { useMemo } from 'react';
 import Highlight from 'react-highlight';
 import ReactMarkdown from 'react-markdown';
-import filter from 'lodash/filter';
 import {
   Head,
   useRouteData,
@@ -95,7 +94,7 @@ function RouterLink({ href, children }) {
   return (
     href.match(/^([a-zA-Z]+?:)/)
       ? <a href={href} target="_blank">{children}</a>
-      : <Link to={href}>{children}</Link>
+      : <a href={href}>{children}</a>
   );
 }
 
@@ -124,7 +123,7 @@ function Image({ src, alt }) {
   return <img src={src} alt={alt} />;
 }
 
-const Author = styled(Link)`
+const Author = styled.a`
   color: ${Colors.greyishBrown};
 `;
 const AuthorProfile = styled.img`
@@ -257,7 +256,7 @@ export default function Post() {
             <Info>
               <Date>{date}</Date>
               &nbsp;&nbsp;by&nbsp;
-              <Author to={`/author/${post.author.id}`}>
+              <Author href={`/author/${post.author.id}`}>
                 {post.author.name}
               </Author>
               {post.author.profileBase64 ? <AuthorProfile src={post.author.profileBase64} /> : null}
